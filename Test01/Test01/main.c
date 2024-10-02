@@ -18,7 +18,7 @@ int main(void)
 	DDRG |= 0x10; // xxxx xxxx == 0001 0000 (PG4 이므로 0~4가 LSB 부터 채워짐) : 1=출력 0=입력 (ㅣ 추가 -> 해당 포트만 보겠다 / 다른 곳은 원래 있던 값 유지)
     while (1) 
     {
-		PORTG |= 0x01;
+		PORTG |= 0x10;
     }
 }
 
